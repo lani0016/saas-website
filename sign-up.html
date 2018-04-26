@@ -19,96 +19,78 @@
 
   <section>
     <div class=" island-2 gutter max-length">
-      <img src="images/logo.png" alt="logo" aria-details="Beanbag-conferencing-logo">
-      <header>
+
+      <header role="banner">
         <h1>Form Page</h1>
-        <nav>
+        <nav id="nav" tabindex="0" class="nav" role="navigation">
+          <div class="embed embed-2by2">
+            <img class="embed-item" src="images/logo.png" alt="logo" aria-details="beanbag-conferencing-logo">
+          </div>
           <ul class="nav list-group">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about-us.html"> About Us</a></li>
-            <li><a class="current" href="prices.html">Prices</a></li>
-            <li><a href="form-page.html">Form Page</a></li>
+            <li><a href="tour.html"> About Us</a></li>
+            <li><a class="current" href="pricing.html">Prices</a></li>
+            <li><a href="sign-up.html">Form Page</a></li>
           </ul>
         </nav>
       </header>
-      <main>
-        <figure>
-          <img src="images/baldwinandaugusta.jpeg" alt="">
+      <main id="main" tabindex="0" class="main" role="main">
+        <figure class="embed embed-16by9">
+          <img class="embed-item" src="images/baldwinandaugusta.jpeg" alt="">
         </figure>
         <section class="contact pad-t-2 pad-b-2">
-
-          <div class="max-length">
-            <h1>Sign in Here</h1>
-
-            <form class="push-0" method="post" action="https://formspree.io/lani0016@algonquinlive.com">
-              <div class="push">
-                <label for="name">Name</label>
-                <input id="name" required>
+          <h2>Welcome soon to be New Member!</h2>
+          <p class="mega push">We’re looking to help super-awesome human beings who want to make their best projects and study groups possible!</p>
+          <form class="push-0" method="POST" action="https://formspree.io/bradlet@algonquincollege.com">
+            <fieldset class="unit push xs-1">
+              <legend class="giga">Personal details</legend>
+              <div class="grid">
+                <div class="one unit xs-1 s-1 m-1 l-1-2 xl-1-2 push">
+                  <label for="name">Your name</label>
+                  <input id="name" required>
+                </div>
+                <div class="one unit xs-1 s-1 m-1 l-1-2 xl-1-2 push">
+                  <label for="age">Age</label>
+                  <input id="age" required>
+                </div>
+                <div class="one unit xs-1 s-1 m-1 l-1-2 xl-1-2 push">
+                  <label for="email">Your email</label>
+                  <input id="email" type="email" required>
+                </div>
+                <div class=" one unit xs-1 s-1 m-1 l-1-2 xl-1-2 push">
+                  <label for="fitness">Package of choice</label>
+                  <select id="fitness" name="fitness">
+                    <option>- "The Works"</option>
+                    <option>- Free</option>
+                    <option>- "Premium"</option>
+                  </select>
+                </div>
               </div>
-              <div class="push">
-                <label for="email">Your email</label>
-                <input id="email" type="email" placeholder="me@me.com" name="email" required>
+              <div class="one push">
+                <label for="details">Address</label>
+                <textarea id="details" name="address" required> </textarea>
               </div>
-              <div>
-                <button class="btn btn-light mega" type="submit">Sign in</button>
-              </div>
-            </form>
-          </div>
+            </fieldset>
+            <fieldset class="unit xs-1">
+              <legend> Anything you'd like to add?</legend>
+            </fieldset>
+            <div class=" unit xs-1 push">
+              <label for="why">Why did you choose us; How can we be better?</label>
+              <textarea id="why" name="why" required> </textarea>
+            </div>
+            <div>
+              <button class="btn mega" type="submit">Sign Me Up!</button>
+            </div>
+            <div>
+              <input type="hidden" name="_subject" value="New Bean Bag Member">
+            </div>
+          </form>
         </section>
-
-        <h2>Welcome soon to be New Member!</h2>
-        <p class="mega push">We’re looking to help super-awesome human beings who want to make their best projects and study groups possible!</p>
-        <form class="push-0" method="POST" action="https://formspree.io/bradlet@algonquincollege.com">
-          <fieldset class="unit push xs-1">
-            <legend class="giga">Personal details</legend>
-            <div class="grid">
-              <div class="one unit xs-1 s-1 m-1 l-1-2 xl-1-2 push">
-                <label for="name">Name</label>
-                <input required>
-              </div>
-              <div class="one unit xs-1 s-1 m-1 l-1-2 xl-1-2 push">
-                <label for="age">Age</label>
-                <input id="age" required>
-              </div>
-              <div class="one unit xs-1 s-1 m-1 l-1-2 xl-1-2 push">
-                <label for="email">Email</label>
-                <input type="email" placeholder="me@me.com" name="email" required>
-              </div>
-              <div class=" one unit xs-1 s-1 m-1 l-1-2 xl-1-2 push">
-                <label for="fitness">Package of choice</label>
-                <select id="fitness" name="fitness">
-                  <option>- "The Works"</option>
-                  <option>- Free</option>
-                  <option>- "Premium"</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="one push">
-              <label for="details">Address</label>
-              <textarea id="details" name="address" required> </textarea>
-            </div>
-          </fieldset>
-          <fieldset class="unit xs-1">
-            <legend> Anything you'd like to add?</legend>
-          </fieldset>
-          <div class=" unit xs-1 push">
-            <label for="why">Why did you choose us; How can we be better?</label>
-            <textarea id="why" name="why" required> </textarea>
-          </div>
-          <div>
-            <button class="btn mega" type="submit">Sign Me Up!</button>
-          </div>
-          <div>
-            <input type="hidden" name="_subject" value="New Bean Bag Member">
-          </div>
-        </form>
       </main>
     </div>
   </section>
 
-
-  <footer>
+  <footer id="contentinfo" tabindex="0" class="contentinfo" role="contentinfo">
     <small>© Beanbag-conferencing.</small>
   </footer>
 </body>

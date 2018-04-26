@@ -15,21 +15,23 @@
     <li><a href="#main">Jump to main content</a></li>
     <li><a href="#nav">Jump to navigation</a></li>
   </ul>
-  <header class="banner">
-    <img src="images/logo.png" alt="logo" aria-details="Beanbag-conferencing-logo">
+  <header role="banner" class="banner">
+    <div class="embed embed-2by2">
+      <img class="embed-item" src="images/logo.png" alt="logo" aria-details="beanbag-conferencing-logo">
+    </div>
     <h1>About Us</h1>
-    <nav>
+    <nav id="nav" tabindex="0" class="nav" role="navigation">
       <ul class="nav list-group">
         <li><a href="index.html">Home</a></li>
-        <li><a class="current" href="about-us.html">About Us</a></li>
-        <li><a href="prices.html">Prices</a></li>
-        <li><a href="formpage.html">Form page</a></li>
+        <li><a class="current" href="tour.html">About Us</a></li>
+        <li><a href="pricing.html">Prices</a></li>
+        <li><a href="sign-up.html">Form page</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <figure>
-      <img src="images/baldwinandaugusta.jpeg" alt="">
+  <main id="main" tabindex="0" class="main" role="main">
+    <figure class="embed embed-16by9">
+      <img class="embed-item" src="images/baldwinandaugusta.jpeg" alt="">
     </figure>
     <section class="contact pad-t-2 pad-b-2">
 
@@ -88,7 +90,7 @@
       </div>
     </div>
   </main>
-  <footer>
+  <footer id="contentinfo" tabindex="0" class="contentinfo" role="contentinfo">
     <small>© Beanbag-conferencing</small>
   </footer>
 </body>
