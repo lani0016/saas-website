@@ -1,0 +1,25 @@
+html {
+  padding: 1em;
+  background-color: #591c04;
+  color: #fcfcfc;
+}
+
+a {
+  color: #fcfcfc;
+}
+
+form {
+  color: #000;
+  background-color: #ddcfc4;
+}
+
+.nav:hover {
+  color: #591c04;
+  border-color: #fff;
+  border-radius: 4px;
+  background-color: #fcfcfc;
+}
+
+a:hover {
+  color: #591c04;
+}
